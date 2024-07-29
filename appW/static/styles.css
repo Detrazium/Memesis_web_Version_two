@@ -1,0 +1,233 @@
+#body_all_memes {
+     > .memes_action{
+            display:inline-block;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 5em;
+            width: 10%;
+            padding: 4em;
+        > .dd_imm{
+            margin: 5px auto;
+            width: 5% auto;
+            margin-left: auto;
+            padding: 2px;
+            box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+        }
+        > .new_memes{}
+        > .get_id_memes{}
+     }
+}
+.content_area {
+    width:65%;
+    padding: 2em;
+    text-align: center;
+    margin-right:auto;
+    margin-left:auto;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+    > .h1 {
+    > .content_area_dinamic {
+        display:flex;
+        text-align: center;
+    }
+    }
+}
+
+.content_card {
+    position:relative;
+    padding-bottom:50px;
+
+    margin: 2em;
+    background: #F5F5F5;
+    display:inline-block;
+    overflow: hidden;
+    padding: 3px;
+    width: 20em;
+    height: 20em;
+    max-width: 14em;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+    > .name {
+        display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            text-overflow:ellipsis;
+        text-overflow:ellipsis;
+        overflow: hidden;
+        margin-bottom: 2%;
+    }
+    > .content_ {
+        position:absolute;
+        bottom:0;
+
+        > .bb_deso{
+            display:inline-block;
+            border-radius: 10px;
+            padding:1px;
+            width: 90%;
+            background:black;
+        }
+        > .content_image{
+            display:inline-block;
+            width: 226px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: left;
+            overflow:hidden;
+            z-index:1;
+            position:relative;
+            box-shadow: inset 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+        }
+        > .content_image:hover  .IMG_hover {
+            animation: image_hov 3s infinite;
+        }
+        > .content_descript{
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            text-overflow:ellipsis;
+            height: 5em;
+            word-break: break-all;
+            overflow: hidden;
+
+
+        }
+        > .content_buttons {
+            display: flex;
+            padding: 4px;
+            max-width: 100%;
+            max-height: 100%;
+            justify-content: center;
+        }
+    }
+}
+.Getter_area_memes {
+    z-index:1000;
+    display: flex;
+    border-radius: 5px;
+    transform:translate(33%, 50%);
+    top:10%;
+    height:40%;
+    width:60%;
+    position:fixed;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.5);
+    background:white;
+    opacity:0.9;
+    > h2{
+        margin: 1%;
+    }
+    > .create_area {
+        text-align:center;
+        border-radius: 15px;
+        margin:auto;
+        height: 4em;
+        width:10em;
+        margin-bottom:4em;
+        box-shadow: 0px 5px 10px 2px rgba(55, 55, 55, 0.5);
+    }
+    >.cre_ext{
+            width: 5em;
+    }
+    > .are_V2{
+        padding: 5px;
+        resize: vertical;
+        font-size: 30px;
+    }
+}
+.getter_area_el {
+        align-items: center;
+        margin:auto;
+        background:#f6f0d5;
+        height: 50%;
+        width:20%;
+        border-radius: 3px;
+        overflow:hidden;
+    }
+#are_v1 {
+        height: 10%;
+        resize:none;
+        font-size: 20px;
+        padding-left: 1em;
+    }
+#img__ {
+   display: block;
+   width: auto;
+   max-height: 100%;
+   max-width: 100%;
+
+}
+#AREA_img {
+    border: 2px solid black;
+    margin:auto;
+    width: 100%;
+    height: 80%;
+    background: #c3cbcc;
+}
+.padderImage {
+    padding: 2%;
+}
+
+@keyframes image_hov {
+    0% {
+        transform: translate(0px, 0px);
+        animation-timing-function: ease-in;
+    }
+    50% {
+        transform: translate(-60%, -90%);
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translate(0px, 0px);
+
+    }
+    }
+.btn_icon {
+    resize:none;
+    overflow:hidden;
+    width: 50px;
+    height: 50px;
+}
+.btn_Img_ {
+    max-width: 100%;
+    max-height: 100%;
+}
+#id_upgraded {
+    background:#f6f0d5;
+    width:10%;
+    height:20%;
+    padding: 1%;
+    padding-top: 0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  outline: 1px solid #494a4f;
+  border-radius: 1px;
+  border: none;
+}
+
+.hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.pagination button.active {
+  background-color: #007bff;
+  color: white;
+}

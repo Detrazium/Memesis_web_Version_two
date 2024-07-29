@@ -1,0 +1,30 @@
+body {
+    font-family: Arial;
+    heigth:100%;
+}
+
+header {
+    text-align: justify;
+    letter-spacing: 2px;
+    flex-content: center;
+    padding: 2em 10%;
+    margin-bottom: 50px;
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    -moz-box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+    box-shadow: 0px 5px 5px -5px rgba(34, 60, 80, 0.6);
+}
+
+
+header::after {
+    content: '';
+    display: inline-block;
+    width: 100%
+}
+
+header > div,
+header h1,
+header nav,
+header div h1 {
+    display: inline-block;
+    vertical-align: middle;
+}

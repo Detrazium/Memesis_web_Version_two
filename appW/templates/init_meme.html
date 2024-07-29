@@ -1,0 +1,19 @@
+{% extends "base.html"%}
+{% block content %}
+<div id='container_all' class="b_con">
+    <a href="/Operatro/memes">
+        <button id="return_index"><img src="/icons/return.ico" id="return_btn"></button>
+    </a>
+    <div id="container_descript" class="b_con">
+        <h4>
+            {{descr}}
+        </h4>
+    </div>
+
+    <div id="container_img__name">
+        <div class="container_name">iD: |{{id}}|</div>
+        <div class="container_name"><h1 class="b_c">{{name}}</h1></div>
+        <div id="container_Image" class="b_con"><img id="_img_contain" src="/imGG/{{imgas}}" alt=""></div>
+    </div>
+</div>
+{% endblock %}

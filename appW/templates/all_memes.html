@@ -1,0 +1,30 @@
+
+{% extends "base.html"%}
+{% block head %}
+<head>
+    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
+</head>
+{% endblock %}
+{% block content %}
+<div id = 'geter_area'>
+    <div id="responseArea"></div>
+</div>
+<div id="body_all_memes">
+    <div class="memes_action" id="_memes_actions">
+        <button class="new_memes dd_imm" id="btnNmem" style="padding:3px">Создать новый мем</button>
+        <div class="id_memes_panel dd_imm">
+            <input class="search_id" id="Id_pole_search" placeholder="Пустой для вывода всех">
+        </div>
+        <button class="get_id_memes" id="_getmemes" style="padding:3px">Искать по ID</button>
+    </div>
+    <div class="content_area">
+        <h1>MEMES</h1>
+        <div class="content_area_dinamic" id="CONTENT_CARDS_AREA">
+        </div>
+    </div>
+</div>
+<script src="{{ url_for('static', path='/java_card_pagination.js') }}"></script>
+<script src="{{ url_for('static', path='/java_card_page.js') }}"></script>
+<script type="text/javascript">var db_data = printer_cards_in_DB({{db_data|tojson}})</script>
+
+{% endblock %}

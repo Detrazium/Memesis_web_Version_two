@@ -1,0 +1,1 @@
+console.log("Js|base_page_link!")
